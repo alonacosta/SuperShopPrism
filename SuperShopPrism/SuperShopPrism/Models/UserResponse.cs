@@ -5,11 +5,12 @@ using System.Text;
 namespace SuperShopPrism.Models
 {
     public class UserResponse
-    {
-        public string Id { get; set; }
+    {        
         public string FirstName { get; set; }
 
-        public string LastName { get; set; }       
+        public string LastName { get; set; }
+
+        public string Id { get; set; }
 
         public string UserName { get; set; }
 
@@ -37,6 +38,6 @@ namespace SuperShopPrism.Models
 
         public bool LockoutEnabled { get; set; }
 
-        public string AccessFailedCount { get; set; }  
+        public int AccessFailedCount { get; set; }  
     }
 }
