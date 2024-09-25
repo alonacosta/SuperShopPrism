@@ -71,13 +71,13 @@ namespace SuperShopPrism.ViewModels
                 return;          
             }
 
-            //IsRunning = true;
+            IsRunning = true;
 
             string url = App.Current.Resources["UrlAPI"].ToString();
 
             Response response = await _apiService.GetListAsync<ProductResponse>(url, "/api", "/Products");
 
-            //IsRunning = false;
+            IsRunning = false;
 
             if (!response.IsSuccess) {
                 await App.Current.MainPage.DisplayAlert("Error", response.Message, "Accept");
