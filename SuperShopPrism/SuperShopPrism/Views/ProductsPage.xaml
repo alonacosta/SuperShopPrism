@@ -4,6 +4,7 @@
              xmlns:prism="http://prismlibrary.com"
              xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:i18n="clr-namespace:SuperShopPrism.Helpers"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SuperShopPrism.Views.ProductsPage"
              Title="{Binding Title}">
@@ -13,7 +14,7 @@
                      AbsoluteLayout.LayoutFlags="All"
                      Padding="5">
             <SearchBar 
-                Placeholder="Search product..."
+                Placeholder="{i18n:Translate SearchProduct}"
                 SearchCommand="{Binding SearchCommand}"
                 Text="{Binding Search}" />
             <CollectionView ItemsSource="{Binding Products}">
@@ -46,12 +47,19 @@
                                  FontSize="Medium"
                                  LineBreakMode="TailTruncation"
                                  Text="{Binding Name}" />
-                                <Label Text="{Binding Price, StringFormat='Price: {0:C2}'}"
-                            FontAttributes="Italic"
-                            VerticalOptions="End" />
-                                <Label Text="{Binding Stock, StringFormat='Price: {0:N2}'}"
-                            FontAttributes="Italic"
-                            VerticalOptions="End" />
+                                <Label 
+                                    FontAttributes="Italic"
+                                    VerticalOptions="End" > 
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{i18n:Translate Price}"/>
+                                            <Span Text="{Binding Price, StringFormat=' {0:C2}'}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label Text="{Binding Stock, StringFormat='Stock: {0:N2}'}"
+                                    FontAttributes="Italic"
+                                    VerticalOptions="End" />
                             </StackLayout>
                             <Image Grid.Column="2" Source="ic_more_vert" />
                         </Grid>
@@ -60,7 +68,7 @@
             </CollectionView>
         </StackLayout>
         <busyindicator:SfBusyIndicator
-            Title="Loading..."
+            Title="{i18n:Translate Loading}"
             AbsoluteLayout.LayoutBounds=".5,.5,.5,.5"
             AbsoluteLayout.LayoutFlags="All"
             AnimationType="Gear"

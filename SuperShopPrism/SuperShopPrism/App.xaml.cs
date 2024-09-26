@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace SuperShopPrism
 {
-    public partial class App
+    public partial class App 
     {
         public App(IPlatformInitializer initializer)
             : base(initializer)
