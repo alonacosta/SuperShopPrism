@@ -122,11 +122,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\drawable-hdpi\ic_more_vert.png" />
-    <Content Include="Resources\drawable-mdpi\ic_more_vert.png" />
-    <Content Include="Resources\drawable-xhdpi\ic_more_vert.png" />
-    <Content Include="Resources\drawable-xxhdpi\ic_more_vert.png" />
-    <Content Include="Resources\drawable-xxxhdpi\ic_more_vert.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_more_vert.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_more_vert.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_more_vert.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_more_vert.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_more_vert.png" />
     <AndroidResource Include="Resources\drawable\ic_more_vert.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -79,7 +79,7 @@ namespace SuperShopPrism.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConnectionError.
+        ///   Looks up a localized string similar to Connection Error.
         /// </summary>
         internal static string ConnectionError {
             get {
@@ -93,6 +93,33 @@ namespace SuperShopPrism.Resources {
         internal static string Error {
             get {
                 return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is available.
+        /// </summary>
+        internal static string IsAvailable {
+            get {
+                return ResourceManager.GetString("IsAvailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last purchase.
+        /// </summary>
+        internal static string LastPurchase {
+            get {
+                return ResourceManager.GetString("LastPurchase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last sale.
+        /// </summary>
+        internal static string LastSale {
+            get {
+                return ResourceManager.GetString("LastSale", resourceCulture);
             }
         }
         
@@ -142,11 +169,20 @@ namespace SuperShopPrism.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search Product.
+        ///   Looks up a localized string similar to Search product.
         /// </summary>
         internal static string SearchProduct {
             get {
                 return ResourceManager.GetString("SearchProduct", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stock.
+        /// </summary>
+        internal static string Stock {
+            get {
+                return ResourceManager.GetString("Stock", resourceCulture);
             }
         }
     }

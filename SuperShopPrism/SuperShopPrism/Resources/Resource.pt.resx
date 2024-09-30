@@ -101,7 +101,7 @@
     <value>Erro</value>
   </data>
   <data name="ConnectionError" xml:space="preserve">
-    <value>ConnectionError</value>
+    <value>Connection Error</value>
   </data>
   <data name="Accept" xml:space="preserve">
     <value>Aceitar</value>
@@ -126,5 +126,17 @@
   </data>
   <data name="Product" xml:space="preserve">
     <value>Produto</value>
+  </data>
+  <data name="IsAvailable" xml:space="preserve">
+    <value>Está disponível</value>
+  </data>
+  <data name="Stock" xml:space="preserve">
+    <value>Estoque</value>
+  </data>
+  <data name="LastPurchase" xml:space="preserve">
+    <value>Última compra</value>
+  </data>
+  <data name="LastSale" xml:space="preserve">
+    <value>Última venda</value>
   </data>
 </root>
