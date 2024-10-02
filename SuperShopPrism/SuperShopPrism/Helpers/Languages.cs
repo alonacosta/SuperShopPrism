@@ -32,7 +32,12 @@ namespace SuperShopPrism.Helpers
         public static string IsAvailable => Resource.IsAvailable;
         public static string LastPurchase => Resource.LastPurchase;
         public static string LastSale => Resource.LastSale;
-        
+        public static string Login => Resource.Login;
+        public static string ModifyUser => Resource.ModifyUser;
+        public static string ShowShoppingCar => Resource.ShowShoppingCar;
+        public static string ShowPurchaseHistory => Resource.ShowPurchaseHistory;
+
+
 
     }
 }

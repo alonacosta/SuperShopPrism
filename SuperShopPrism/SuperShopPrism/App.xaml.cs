@@ -1,5 +1,6 @@
 using Prism;
 using Prism.Ioc;
+using Prism.Navigation;
 using SuperShopPrism.Services;
 using SuperShopPrism.ViewModels;
 using SuperShopPrism.Views;
@@ -23,7 +24,8 @@ namespace SuperShopPrism
 
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/ProductsPage");
+            await NavigationService.NavigateAsync($"/{nameof(SuperShopMasterDetailPage)}/NavigationPage/{nameof(ProductsPage)}");
+         
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -36,6 +38,10 @@ namespace SuperShopPrism
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<ProductsPage, ProductsPageViewModel>();
             containerRegistry.RegisterForNavigation<ProductDetailPage, ProductDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<SuperShopMasterDetailPage, SuperShopMasterDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<ShowHistoryPage, ShowHistoryPageViewModel>();
+            containerRegistry.RegisterForNavigation<ModifyUserPage, ModifyUserPageViewModel>();
+            containerRegistry.RegisterForNavigation<ShowCarPage, ShowCarPageViewModel>();
         }
     }
 }
